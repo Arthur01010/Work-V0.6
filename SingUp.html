@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./singup.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing Up</title>
+    <link rel="stylesheet" href="./products.css">
+
+</head>
+<body>
+    <header class="sticky">
+        <a href="" class="logo"><img src="https://www.fossil.com/on/demandware.static/Sites-fossil-na-Site/-/default/dwfb802b2b/images/svg-icons/logo-xl.svg" alt=""></a> 
+          <ul>
+              <li><a href="./Home.html">Home</a></li>
+              <li id="menu"><a href="">Products</a> <ul class="dropmenu">
+                  <li ><a href="./men.html">Men</a></li>
+                  <li><a href="./women.html">Women</a></li>  </ul
+              ></li>
+              <li><a href="./Contactus.html">Contact</a></li>
+              <li><a href="./SignIn.html">Sing in</a></li>
+          </ul>
+    </header>
+
+
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="SignIn.html" method="post">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required >
+            </div>
+            
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" >
+            </div>
+            
+            <div class="input-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" d>
+                    <option value="Choose gender">Choose gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" >
+            </div>
+            
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" required>
+            </div>
+            
+            <button type="submit" class="submit-button"> <a href="SignIn.html">Sign Up</a></button>
+        </form>
+        
+        <p class="signin-link">Already have an account? <a href="SignIn.html">Sign In</a></p>
+    </div>
+    <script src="./women.js"></script>
+</body>
+</html>
